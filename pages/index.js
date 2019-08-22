@@ -19,14 +19,6 @@ const PostLink = props => (
   </li>
 );
 
-const PostLink2 = props => (
-  <li>
-    <Link href="/p/[id]" as={`/p/${props.id}`}>
-      <a>{props.id}</a>
-    </Link>
-  </li>
-);
-
 const Index = () => {
   return (
     <Layout>
@@ -35,9 +27,6 @@ const Index = () => {
         <PostLink title="Hello Next.js" />
         <PostLink title="Learn Next.js is awesome" />
         <PostLink title="Deploy apps with Zeit" />
-        <PostLink2 id="hello-nextjs" />
-        <PostLink2 id="learn-nextjs" />
-        <PostLink2 id="deploy-nextj" />
         <ALink href="/fetch" title="Fetch demo" />
       </ul>
     </Layout>
